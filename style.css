@@ -1,0 +1,230 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    user-select: none;
+}
+
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+}
+
+header h2{
+    padding: 1em;
+}
+
+nav{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px ;
+}
+
+
+/* section-1 */
+
+.section-1{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+h1{
+    text-align: center;
+}
+.section-1 p{
+    padding-top: 1em;
+    line-height: 2em;
+}
+
+
+.row-1{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.home{
+    margin: 1em;
+    padding: 1em;
+}
+
+.btn{
+    padding-top: 20px;
+}
+button{
+    width: 25%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    background-color: cornflowerblue;
+}
+
+/* section-2 */
+
+.section-2{
+    width: 90%;
+    margin: 4rem auto;
+}
+
+
+.section-2 h2{
+    margin: 1rem;
+    color: brown;
+}
+
+
+.row-2{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.movies{
+    margin: 1em;
+    text-align: center;
+    border-radius: 8px;
+    line-height: 1.5em;
+    padding: 1em;
+}
+
+.movies img{
+    border-radius: 8px;
+    height: 20em;
+}
+
+/* section-3 */
+
+
+
+.section-3{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.row-3{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    border: .5px solid black;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+}
+span{
+    text-align: center;
+}
+
+
+
+
+
+/* media query */
+
+
+
+
+
+@media(max-width:768px){
+
+.section-1,.section-2{
+    font-size: 1em;
+}
+
+    header{
+        width: 100%;
+    }
+
+    header h2{
+        font-size: 15px;
+    }
+
+    li a{
+        font-size: 15px;
+    }
+
+    .section-1{
+        width: 100%;
+    }
+    .row-1{
+        width: 100%;
+        line-height: 2rem;
+        flex-direction: column;
+    }
+    button{
+        width: 50%;
+        height: 40px;
+    }
+
+
+.section-2{
+    width: 100%;
+}
+    .row-2{
+        width: 100%;
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+
+
+    .movies{
+        width: 100%;
+        border: none;
+
+    }
+
+    .movies img{
+        height: 15em;
+    }
+
+    .section-3{
+        width: 100%;
+    }
+.row-3{
+    width: 100%;
+    flex-direction: column;
+}
+
+}
